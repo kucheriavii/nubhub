@@ -1,0 +1,2547 @@
+{
+  "users": [
+    {
+      "id": "admin-1",
+      "name": "Максим Коваленко (Admin)",
+      "email": "admin@nubhub.ua",
+      "passwordHash": "264721d0e185720432073b2a91125563ed476b757a27d346335415ec03c30451",
+      "role": "admin",
+      "authProvider": "email",
+      "targetRole": "Platform Architect / Senior Mentor",
+      "englishLevel": "C1 (Advanced)",
+      "city": "Київ",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=admin",
+      "githubUrl": "https://github.com/nubhub-admin",
+      "bio": "Головний адміністратор платформи NubHub. Керую базою скілів, вакансій та менторю джунів.",
+      "skills": [
+        "postgresql",
+        "git",
+        "javascript",
+        "typescript",
+        "react",
+        "html-css",
+        "python",
+        "fastapi-django",
+        "docker",
+        "sql",
+        "rest-api"
+      ],
+      "createdAt": "2026-09-01T10:00:00Z",
+      "skillLevels": {
+        "sql": "Просунутий",
+        "postgresql": "Бог",
+        "git": "Бог",
+        "javascript": "Просунутий",
+        "typescript": "Просунутий",
+        "react": "Просунутий",
+        "html-css": "Бог",
+        "python": "Бог",
+        "fastapi-django": "Бог",
+        "rest-api": "Бог",
+        "docker": "Просунутий",
+        "qa-theory": "Базовий",
+        "excel-bi": "Базовий"
+      }
+    },
+    {
+      "id": "user-1",
+      "name": "Олександр Бондаренко",
+      "email": "alex.frontend@gmail.com",
+      "passwordHash": "95d4e842be971195ae1c8f4bbd833673be7ffaeb72a3d03a04993c3d5af12d98",
+      "role": "user",
+      "authProvider": "google",
+      "targetRole": "Junior Frontend Developer (React)",
+      "englishLevel": "B1 (Intermediate)",
+      "city": "Київ",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Alex",
+      "githubUrl": "https://github.com/alex-bond-dev",
+      "bio": "Верстаю сайти, активно вчу React та TypeScript. Шукаю першу роботу на Djinni або DOU.",
+      "skills": [
+        "html-css",
+        "javascript",
+        "react",
+        "git"
+      ],
+      "createdAt": "2026-10-01T12:00:00Z",
+      "skillLevels": {
+        "html-css": "Просунутий",
+        "javascript": "Просунутий",
+        "react": "Базовий",
+        "git": "Базовий"
+      }
+    },
+    {
+      "id": "user-2",
+      "name": "Марія Шевченко",
+      "email": "maria.data@gmail.com",
+      "passwordHash": "95d4e842be971195ae1c8f4bbd833673be7ffaeb72a3d03a04993c3d5af12d98",
+      "role": "user",
+      "authProvider": "google",
+      "targetRole": "Junior Data / BI Analyst",
+      "englishLevel": "B2 (Upper-Intermediate)",
+      "city": "Львів",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Maria",
+      "githubUrl": "https://github.com/maria-data-ua",
+      "bio": "Переходжу з фінансів в IT-аналітику. Обожнюю SQL-запити та дашборди в Power BI.",
+      "skills": [
+        "sql",
+        "excel-bi",
+        "python"
+      ],
+      "createdAt": "2026-10-03T14:20:00Z",
+      "skillLevels": {
+        "sql": "Просунутий",
+        "excel-bi": "Бог",
+        "python": "Базовий"
+      }
+    },
+    {
+      "id": "user-3",
+      "name": "Дмитро Ткаченко",
+      "email": "dmytro.py@github.user",
+      "passwordHash": "95d4e842be971195ae1c8f4bbd833673be7ffaeb72a3d03a04993c3d5af12d98",
+      "role": "user",
+      "authProvider": "github",
+      "targetRole": "Junior Python Backend Developer",
+      "englishLevel": "B1 (Intermediate)",
+      "city": "Дніпро",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Dmytro",
+      "githubUrl": "https://github.com/dmytro-tkach",
+      "bio": "Пишу пет-проєкти на FastAPI та PostgreSQL. Розібрався з базовим Docker.",
+      "skills": [
+        "python",
+        "fastapi-django",
+        "sql",
+        "postgresql",
+        "git"
+      ],
+      "createdAt": "2026-10-05T09:15:00Z",
+      "skillLevels": {
+        "python": "Просунутий",
+        "fastapi-django": "Просунутий",
+        "sql": "Базовий",
+        "postgresql": "Базовий",
+        "git": "Просунутий"
+      }
+    },
+    {
+      "id": "user-4",
+      "name": "Анна Мельник",
+      "email": "anna.qa@ukr.net",
+      "passwordHash": "95d4e842be971195ae1c8f4bbd833673be7ffaeb72a3d03a04993c3d5af12d98",
+      "role": "user",
+      "authProvider": "email",
+      "targetRole": "Junior Manual QA Engineer",
+      "englishLevel": "B1 (Intermediate)",
+      "city": "Вінниця",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Anna",
+      "githubUrl": "https://github.com/anna-qa-test",
+      "bio": "Закінчила курс QA на Prometheus. Знаю тест-дизайн, ганяю запити в Postman та перевіряю БД через SQL.",
+      "skills": [
+        "qa-theory",
+        "rest-api",
+        "sql",
+        "html-css"
+      ],
+      "createdAt": "2026-10-06T16:40:00Z",
+      "skillLevels": {
+        "qa-theory": "Просунутий",
+        "rest-api": "Просунутий",
+        "sql": "Базовий",
+        "html-css": "Базовий"
+      }
+    },
+    {
+      "id": "user-5",
+      "name": "Іван Кравчук",
+      "email": "ivan.fullstack@github.user",
+      "passwordHash": "95d4e842be971195ae1c8f4bbd833673be7ffaeb72a3d03a04993c3d5af12d98",
+      "role": "user",
+      "authProvider": "github",
+      "targetRole": "Trainee / Junior Fullstack Developer",
+      "englishLevel": "B2 (Upper-Intermediate)",
+      "city": "Одеса",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Ivan",
+      "githubUrl": "https://github.com/ivan-kravchuk",
+      "bio": "Люблю і фронтенд на React, і бекенд на Python. Хочу потрапити в інтернатуру великої компанії.",
+      "skills": [
+        "html-css",
+        "javascript",
+        "react",
+        "python",
+        "git",
+        "rest-api"
+      ],
+      "createdAt": "2026-10-08T11:10:00Z",
+      "skillLevels": {
+        "html-css": "Просунутий",
+        "javascript": "Просунутий",
+        "react": "Базовий",
+        "python": "Базовий",
+        "git": "Просунутий",
+        "rest-api": "Базовий"
+      }
+    },
+    {
+      "id": "user-6",
+      "name": "Софія Бойко",
+      "email": "sofia.boyko@gmail.com",
+      "passwordHash": "95d4e842be971195ae1c8f4bbd833673be7ffaeb72a3d03a04993c3d5af12d98",
+      "role": "user",
+      "authProvider": "google",
+      "targetRole": "Trainee Frontend Developer",
+      "englishLevel": "A2 (Pre-Intermediate)",
+      "city": "Івано-Франківськ",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sofia",
+      "githubUrl": "https://github.com/sofia-web",
+      "bio": "Тільки починаю свій шлях. Вже впевнено верстаю адаптивні лендінги та вчу базовий JS.",
+      "skills": [
+        "html-css",
+        "javascript",
+        "git"
+      ],
+      "createdAt": "2026-10-10T18:05:00Z",
+      "skillLevels": {
+        "html-css": "Просунутий",
+        "javascript": "Базовий",
+        "git": "Базовий"
+      }
+    },
+    {
+      "id": "user-7",
+      "name": "Артем Лисенко",
+      "email": "artem.sql@outlook.com",
+      "passwordHash": "95d4e842be971195ae1c8f4bbd833673be7ffaeb72a3d03a04993c3d5af12d98",
+      "role": "user",
+      "authProvider": "email",
+      "targetRole": "Junior Database / Backend Engineer",
+      "englishLevel": "B1 (Intermediate)",
+      "city": "Харків",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Artem",
+      "githubUrl": "https://github.com/artem-db",
+      "bio": "Фанатію від реляційних баз даних, оптимізації запитів у PostgreSQL та контейнеризації.",
+      "skills": [
+        "sql",
+        "postgresql",
+        "docker",
+        "git",
+        "python"
+      ],
+      "createdAt": "2026-10-11T08:30:00Z",
+      "skillLevels": {
+        "sql": "Бог",
+        "postgresql": "Просунутий",
+        "docker": "Базовий",
+        "git": "Просунутий",
+        "python": "Базовий"
+      }
+    },
+    {
+      "id": "user-8",
+      "name": "Катерина Савченко",
+      "email": "kate.savchenko@gmail.com",
+      "passwordHash": "95d4e842be971195ae1c8f4bbd833673be7ffaeb72a3d03a04993c3d5af12d98",
+      "role": "user",
+      "authProvider": "google",
+      "targetRole": "Junior QA Automation (JS/Python)",
+      "englishLevel": "B2 (Upper-Intermediate)",
+      "city": "Київ",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Kateryna",
+      "githubUrl": "https://github.com/kate-aqa",
+      "bio": "Маю базу мануального тестування, зараз активно пишу автотести на Python та вивчаю CI/CD.",
+      "skills": [
+        "qa-theory",
+        "python",
+        "rest-api",
+        "git",
+        "sql"
+      ],
+      "createdAt": "2026-10-12T15:50:00Z",
+      "skillLevels": {
+        "qa-theory": "Бог",
+        "python": "Просунутий",
+        "rest-api": "Просунутий",
+        "git": "Базовий",
+        "sql": "Базовий"
+      }
+    },
+    {
+      "id": "user-9",
+      "name": "Богдан Руденко",
+      "email": "bohdan.ts@github.user",
+      "passwordHash": "95d4e842be971195ae1c8f4bbd833673be7ffaeb72a3d03a04993c3d5af12d98",
+      "role": "user",
+      "authProvider": "github",
+      "targetRole": "Junior React / TypeScript Developer",
+      "englishLevel": "B2 (Upper-Intermediate)",
+      "city": "Тернопіль",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Bohdan",
+      "githubUrl": "https://github.com/bohdan-ts",
+      "bio": "Переписав усі свої проєкти на суворий TypeScript + React. Готовий до технічних співбесід.",
+      "skills": [
+        "html-css",
+        "javascript",
+        "typescript",
+        "react",
+        "rest-api",
+        "git"
+      ],
+      "createdAt": "2026-10-14T13:25:00Z",
+      "skillLevels": {
+        "html-css": "Просунутий",
+        "javascript": "Просунутий",
+        "typescript": "Просунутий",
+        "react": "Просунутий",
+        "rest-api": "Базовий",
+        "git": "Просунутий"
+      }
+    },
+    {
+      "id": "user-10",
+      "name": "Юлія Мороз",
+      "email": "yulia.moroz@ukr.net",
+      "passwordHash": "95d4e842be971195ae1c8f4bbd833673be7ffaeb72a3d03a04993c3d5af12d98",
+      "role": "user",
+      "authProvider": "email",
+      "targetRole": "Молодший аналітик даних (Work.ua / Robota.ua)",
+      "englishLevel": "A2 (Pre-Intermediate)",
+      "city": "Полтава",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Yulia",
+      "githubUrl": "https://github.com/yulia-analytics",
+      "bio": "Круто знаю Excel та Power BI, зараз підтягую SQL та PostgreSQL за допомогою тренажерів на NubHub.",
+      "skills": [
+        "excel-bi",
+        "sql"
+      ],
+      "createdAt": "2026-10-16T19:00:00Z",
+      "skillLevels": {
+        "excel-bi": "Просунутий",
+        "sql": "Базовий"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "id": "sql",
+      "name": "SQL",
+      "category": "Бази даних",
+      "overallDemand": 63,
+      "platformDemand": {
+        "Djinni": 67,
+        "DOU": 65,
+        "Work.ua": 60,
+        "Robota.ua": 40
+      },
+      "timeToLearn": "2–3 тижні",
+      "description": "Стандартна мова запитів для роботи з реляційними базами даних. Потрібна майже скрізь: від аналітики та тестування (QA) до бекенд-розробки.",
+      "resources": [
+        {
+          "type": "practice",
+          "title": "SQLBolt — Інтерактивний тренажер з нуля",
+          "url": "https://sqlbolt.com/",
+          "lang": "EN",
+          "free": true
+        },
+        {
+          "type": "course",
+          "title": "Основи SQL та баз даних (Prometheus / YouTube)",
+          "url": "https://www.youtube.com/results?search_query=sql+%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%8E",
+          "lang": "UA",
+          "free": true
+        },
+        {
+          "type": "book",
+          "title": "Learning SQL (Alan Beaulieu) — класичний підручник",
+          "url": "https://www.oreilly.com/library/view/learning-sql-3rd/9781492057604/",
+          "lang": "EN",
+          "free": false
+        }
+      ],
+      "levels": [
+        "Базовий",
+        "Просунутий",
+        "Бог",
+        "Ілон Маск"
+      ]
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "category": "Бази даних",
+      "overallDemand": 10,
+      "platformDemand": {
+        "Djinni": 67,
+        "DOU": 4,
+        "Work.ua": 40,
+        "Robota.ua": 40
+      },
+      "timeToLearn": "1–2 тижні (після базового SQL)",
+      "description": "Найпопулярніша сучасна реляційна СУБД в українських продуктових та аутсорс-компаніях.",
+      "resources": [
+        {
+          "type": "practice",
+          "title": "PostgreSQL Exercises (pgexercises.com)",
+          "url": "https://pgexercises.com/",
+          "lang": "EN",
+          "free": true
+        },
+        {
+          "type": "course",
+          "title": "PostgreSQL Tutorial — Повний посібник для новачків",
+          "url": "https://www.postgresqltutorial.com/",
+          "lang": "EN",
+          "free": true
+        },
+        {
+          "type": "book",
+          "title": "PostgreSQL: Up and Running (Regina Obe)",
+          "url": "https://www.oreilly.com/library/view/postgresql-up-and/9781491963401/",
+          "lang": "EN",
+          "free": false
+        }
+      ],
+      "levels": [
+        "Базовий",
+        "Просунутий",
+        "Бог"
+      ]
+    },
+    {
+      "id": "git",
+      "name": "Git / GitHub",
+      "category": "Інструменти та DevOps",
+      "overallDemand": 11,
+      "platformDemand": {
+        "Djinni": 100,
+        "DOU": 4,
+        "Work.ua": 40,
+        "Robota.ua": 40
+      },
+      "timeToLearn": "3–5 днів",
+      "description": "Система контролю версій. Абсолютний мастхев для будь-якого розробника та QA Automation.",
+      "resources": [
+        {
+          "type": "practice",
+          "title": "Learn Git Branching (візуальна гра-тренажер, є укр. мова)",
+          "url": "https://learngitbranching.js.org/?locale=uk",
+          "lang": "UA",
+          "free": true
+        },
+        {
+          "type": "book",
+          "title": "Pro Git (офіційна книга українською онлайн)",
+          "url": "https://git-scm.com/book/uk/v2",
+          "lang": "UA",
+          "free": true
+        },
+        {
+          "type": "course",
+          "title": "Git та GitHub для початківців (YouTube курс)",
+          "url": "https://www.youtube.com/results?search_query=git+github+%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%8E",
+          "lang": "UA",
+          "free": true
+        }
+      ],
+      "levels": [
+        "Базовий",
+        "Просунутий",
+        "Бог"
+      ]
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "category": "Мова програмування",
+      "overallDemand": 11,
+      "platformDemand": {
+        "Djinni": 67,
+        "DOU": 6,
+        "Work.ua": 20,
+        "Robota.ua": 40
+      },
+      "timeToLearn": "1.5–2 місяці",
+      "description": "Головна мова вебу. Основа для React, Vue, Node.js та автоматизації тестування.",
+      "resources": [
+        {
+          "type": "book",
+          "title": "Сучасний підручник JavaScript (uk.javascript.info)",
+          "url": "https://uk.javascript.info/",
+          "lang": "UA",
+          "free": true
+        },
+        {
+          "type": "practice",
+          "title": "FreeCodeCamp — JavaScript Algorithms & Data Structures",
+          "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/",
+          "lang": "EN",
+          "free": true
+        },
+        {
+          "type": "book",
+          "title": "You Don’t Know JS Yet (Kyle Simpson)",
+          "url": "https://github.com/getify/You-Dont-Know-JS",
+          "lang": "EN",
+          "free": true
+        }
+      ],
+      "levels": [
+        "Базовий",
+        "Просунутий",
+        "Бог"
+      ]
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "category": "Мова програмування",
+      "overallDemand": 7,
+      "platformDemand": {
+        "Djinni": 33,
+        "DOU": 3,
+        "Work.ua": 20,
+        "Robota.ua": 40
+      },
+      "timeToLearn": "2–3 тижні (після JS)",
+      "description": "JavaScript зі строгою типізацією. Сьогодні більшість комерційних проєктів на Djinni та DOU вимагають саме TS.",
+      "resources": [
+        {
+          "type": "practice",
+          "title": "Total TypeScript — Beginner Tutorials",
+          "url": "https://www.totaltypescript.com/tutorials/beginners-typescript",
+          "lang": "EN",
+          "free": true
+        },
+        {
+          "type": "book",
+          "title": "TypeScript Handbook (Офіційна документація)",
+          "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+          "lang": "EN",
+          "free": true
+        },
+        {
+          "type": "course",
+          "title": "TypeScript з нуля (український YouTube)",
+          "url": "https://www.youtube.com/results?search_query=typescript+%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%8E",
+          "lang": "UA",
+          "free": true
+        }
+      ],
+      "levels": [
+        "Базовий",
+        "Просунутий",
+        "Бог"
+      ]
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "category": "Фреймворк / Бібліотека",
+      "overallDemand": 9,
+      "platformDemand": {
+        "Djinni": 33,
+        "DOU": 5,
+        "Work.ua": 20,
+        "Robota.ua": 40
+      },
+      "timeToLearn": "3–4 тижні",
+      "description": "Найзатребуваніша бібліотека для побудови інтерфейсів. Лідирує за кількістю Junior Frontend вакансій.",
+      "resources": [
+        {
+          "type": "book",
+          "title": "Офіційна документація React українською (uk.react.dev)",
+          "url": "https://uk.react.dev/learn",
+          "lang": "UA",
+          "free": true
+        },
+        {
+          "type": "practice",
+          "title": "Scrimba — Learn React for Free (інтерактивний курс)",
+          "url": "https://scrimba.com/learn/learnreact",
+          "lang": "EN",
+          "free": true
+        },
+        {
+          "type": "book",
+          "title": "The Road to React (Robin Wieruch)",
+          "url": "https://www.roadtoreact.com/",
+          "lang": "EN",
+          "free": false
+        }
+      ],
+      "levels": [
+        "Базовий",
+        "Просунутий",
+        "Бог"
+      ]
+    },
+    {
+      "id": "html-css",
+      "name": "HTML / CSS",
+      "category": "Мова розмітки та стилів",
+      "overallDemand": 7,
+      "platformDemand": {
+        "Djinni": 33,
+        "DOU": 1,
+        "Work.ua": 60,
+        "Robota.ua": 20
+      },
+      "timeToLearn": "2–3 тижні",
+      "description": "Базова розмітка та стилізація веб-сторінок (Flexbox, Grid, адаптивна верстка).",
+      "resources": [
+        {
+          "type": "practice",
+          "title": "Flexbox Froggy & Grid Garden (ігри-тренажери українською)",
+          "url": "https://flexboxfroggy.com/#uk",
+          "lang": "UA",
+          "free": true
+        },
+        {
+          "type": "course",
+          "title": "MDN Web Docs — Вивчення веброзробки",
+          "url": "https://developer.mozilla.org/uk/docs/Learn",
+          "lang": "UA",
+          "free": true
+        },
+        {
+          "type": "practice",
+          "title": "Frontend Mentor (реальні макети для практики верстки)",
+          "url": "https://www.frontendmentor.io/",
+          "lang": "EN",
+          "free": true
+        }
+      ],
+      "levels": [
+        "Базовий",
+        "Просунутий",
+        "Бог"
+      ]
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "category": "Мова програмування",
+      "overallDemand": 12,
+      "platformDemand": {
+        "Djinni": 33,
+        "DOU": 10,
+        "Work.ua": 0,
+        "Robota.ua": 40
+      },
+      "timeToLearn": "1–1.5 місяці",
+      "description": "Універсальна мова для Backend (FastAPI, Django), Data Analytics, AI/ML та автоматизації.",
+      "resources": [
+        {
+          "type": "course",
+          "title": "Програмування на Python (Курс на Prometheus)",
+          "url": "https://prometheus.org.ua/",
+          "lang": "UA",
+          "free": true
+        },
+        {
+          "type": "book",
+          "title": "Automate the Boring Stuff with Python (Al Sweigart)",
+          "url": "https://automatetheboringstuff.com/",
+          "lang": "EN",
+          "free": true
+        },
+        {
+          "type": "practice",
+          "title": "Exercism — Python Track (задачі з менторством)",
+          "url": "https://exercism.org/tracks/python",
+          "lang": "EN",
+          "free": true
+        }
+      ],
+      "levels": [
+        "Базовий",
+        "Просунутий",
+        "Бог"
+      ]
+    },
+    {
+      "id": "fastapi-django",
+      "name": "FastAPI / Django",
+      "category": "Фреймворк / Бібліотека",
+      "overallDemand": 2,
+      "platformDemand": {
+        "Djinni": 33,
+        "DOU": 0,
+        "Work.ua": 0,
+        "Robota.ua": 20
+      },
+      "timeToLearn": "3–4 тижні",
+      "description": "Головні Python-фреймворки для створення веб-серверів та REST API.",
+      "resources": [
+        {
+          "type": "book",
+          "title": "FastAPI Official Tutorial (дуже зрозуміла документація)",
+          "url": "https://fastapi.tiangolo.com/uk/tutorial/",
+          "lang": "UA",
+          "free": true
+        },
+        {
+          "type": "practice",
+          "title": "Django Girls Tutorial (українською мовою)",
+          "url": "https://tutorial.djangogirls.org/uk/",
+          "lang": "UA",
+          "free": true
+        }
+      ],
+      "levels": [
+        "Базовий",
+        "Просунутий",
+        "Бог"
+      ]
+    },
+    {
+      "id": "rest-api",
+      "name": "REST API / Postman",
+      "category": "Інструменти та DevOps",
+      "overallDemand": 11,
+      "platformDemand": {
+        "Djinni": 100,
+        "DOU": 3,
+        "Work.ua": 80,
+        "Robota.ua": 20
+      },
+      "timeToLearn": "1 тиждень",
+      "description": "Розуміння HTTP-запитів (GET, POST, PUT, DELETE), статус-кодів, JSON та робота з Postman. Потрібно для QA, Frontend і Backend.",
+      "resources": [
+        {
+          "type": "course",
+          "title": "Postman Academy — APIs for Beginners",
+          "url": "https://academy.postman.com/",
+          "lang": "EN",
+          "free": true
+        },
+        {
+          "type": "course",
+          "title": "Що таке REST API та як працювати в Postman (YouTube UA)",
+          "url": "https://www.youtube.com/results?search_query=postman+rest+api+%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%8E",
+          "lang": "UA",
+          "free": true
+        }
+      ],
+      "levels": [
+        "Базовий",
+        "Просунутий",
+        "Бог"
+      ]
+    },
+    {
+      "id": "qa-theory",
+      "name": "Теорія тестування (Test Design, Jira)",
+      "category": "Тестування та Аналітика",
+      "overallDemand": 25,
+      "platformDemand": {
+        "Djinni": 0,
+        "DOU": 27,
+        "Work.ua": 40,
+        "Robota.ua": 0
+      },
+      "timeToLearn": "2–3 тижні",
+      "description": "Чек-лісти, тест-кейси, баг-репорти, техніки тест-дизайну (еквівалентне розбиття, граничні значення).",
+      "resources": [
+        {
+          "type": "book",
+          "title": "Тестування Дот Ком (Роман Савін) / ISTQB Foundation Syllabus",
+          "url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+          "lang": "EN",
+          "free": true
+        },
+        {
+          "type": "course",
+          "title": "Основи тестування ПЗ (Безкоштовний курс Prometheus)",
+          "url": "https://prometheus.org.ua/",
+          "lang": "UA",
+          "free": true
+        },
+        {
+          "type": "practice",
+          "title": "QALight / База знань для тестувальників",
+          "url": "https://www.youtube.com/results?search_query=qa+%D0%B7+%D0%BD%D1%83%D0%BB%D1%8F+%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%8E",
+          "lang": "UA",
+          "free": true
+        }
+      ],
+      "levels": [
+        "Базовий",
+        "Просунутий",
+        "Бог"
+      ]
+    },
+    {
+      "id": "excel-bi",
+      "name": "Excel / Power BI",
+      "category": "Тестування та Аналітика",
+      "overallDemand": 3,
+      "platformDemand": {
+        "Djinni": 0,
+        "DOU": 1,
+        "Work.ua": 0,
+        "Robota.ua": 40
+      },
+      "timeToLearn": "2 тижні",
+      "description": "Зведені таблиці (Pivot Tables), VLOOKUP/XLOOKUP, дашборди у Power BI або Tableau. Дуже часто вимагається на Work.ua та Robota.ua.",
+      "resources": [
+        {
+          "type": "course",
+          "title": "Візуалізація даних та Power BI (Prometheus / YouTube)",
+          "url": "https://www.youtube.com/results?search_query=power+bi+%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%8E",
+          "lang": "UA",
+          "free": true
+        },
+        {
+          "type": "practice",
+          "title": "Microsoft Learn — Get started with Power BI",
+          "url": "https://learn.microsoft.com/uk-ua/training/powerplatform/power-bi",
+          "lang": "UA",
+          "free": true
+        }
+      ],
+      "levels": [
+        "Базовий",
+        "Просунутий",
+        "Бог"
+      ]
+    },
+    {
+      "id": "docker",
+      "name": "Docker (Базовий)",
+      "category": "Інструменти та DevOps",
+      "overallDemand": 8,
+      "platformDemand": {
+        "Djinni": 100,
+        "DOU": 3,
+        "Work.ua": 0,
+        "Robota.ua": 40
+      },
+      "timeToLearn": "4–6 днів",
+      "description": "Контейнеризація додатків. Навіть для джуна вміння запустити проект через docker-compose є величезним плюсом.",
+      "resources": [
+        {
+          "type": "practice",
+          "title": "Play with Docker (Інтерактивна пісочниця в браузері)",
+          "url": "https://labs.play-with-docker.com/",
+          "lang": "EN",
+          "free": true
+        },
+        {
+          "type": "course",
+          "title": "Docker для початківців за 1 годину (YouTube UA)",
+          "url": "https://www.youtube.com/results?search_query=docker+%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%8E",
+          "lang": "UA",
+          "free": true
+        }
+      ],
+      "levels": [
+        "Базовий",
+        "Просунутий",
+        "Бог"
+      ]
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "category": "Бази даних",
+      "overallDemand": 2,
+      "platformDemand": {
+        "Djinni": 0,
+        "DOU": 0,
+        "Work.ua": 20,
+        "Robota.ua": 20
+      },
+      "timeToLearn": "1–2 тижні",
+      "description": "Класична реляційна СУБД, широко поширена у веб-проєктах, e-commerce та CMS.",
+      "resources": [
+        {
+          "type": "course",
+          "title": "MySQL Tutorial for Beginners",
+          "url": "https://www.mysqltutorial.org/",
+          "lang": "EN",
+          "free": true
+        },
+        {
+          "type": "practice",
+          "title": "W3Schools MySQL Exercises",
+          "url": "https://www.w3schools.com/mysql/",
+          "lang": "EN",
+          "free": true
+        }
+      ],
+      "levels": [
+        "Базовий",
+        "Просунутий",
+        "Бог"
+      ]
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB (NoSQL)",
+      "category": "Бази даних",
+      "overallDemand": 3,
+      "platformDemand": {
+        "Djinni": 33,
+        "DOU": 0,
+        "Work.ua": 0,
+        "Robota.ua": 40
+      },
+      "timeToLearn": "1–2 тижні",
+      "description": "Найпопулярніша документо-орієнтована NoSQL база даних, часто використовується у зв’язці з Node.js та Python.",
+      "resources": [
+        {
+          "type": "course",
+          "title": "MongoDB University — Free Courses",
+          "url": "https://learn.mongodb.com/",
+          "lang": "EN",
+          "free": true
+        }
+      ],
+      "levels": [
+        "Базовий",
+        "Просунутий",
+        "Бог"
+      ]
+    },
+    {
+      "id": "csharp",
+      "name": "C# (.NET)",
+      "category": "Мова програмування",
+      "overallDemand": 1,
+      "platformDemand": {
+        "Djinni": 33,
+        "DOU": 0,
+        "Work.ua": 0,
+        "Robota.ua": 0
+      },
+      "timeToLearn": "1.5–2 місяці",
+      "description": "Потужна типізована мова від Microsoft. Дуже високий попит у великих аутсорс та ентерпрайз-компаніях України.",
+      "resources": [
+        {
+          "type": "course",
+          "title": "Microsoft Learn — C# Foundational Certification",
+          "url": "https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-1/",
+          "lang": "EN",
+          "free": true
+        }
+      ],
+      "levels": [
+        "Базовий",
+        "Просунутий",
+        "Бог"
+      ]
+    },
+    {
+      "id": "vue",
+      "name": "Vue.js",
+      "category": "Фреймворк / Бібліотека",
+      "overallDemand": 1,
+      "platformDemand": {
+        "Djinni": 0,
+        "DOU": 0,
+        "Work.ua": 20,
+        "Robota.ua": 0
+      },
+      "timeToLearn": "2–3 тижні",
+      "description": "Прогресивний та легкий у вивченні фронтенд-фреймворк, популярний у продуктових командах та веб-студіях.",
+      "resources": [
+        {
+          "type": "book",
+          "title": "Vue.js Official Guide",
+          "url": "https://vuejs.org/guide/introduction.html",
+          "lang": "EN",
+          "free": true
+        }
+      ],
+      "levels": [
+        "Базовий",
+        "Просунутий",
+        "Бог"
+      ]
+    },
+    {
+      "id": "tailwind",
+      "name": "Tailwind CSS / SCSS",
+      "category": "Мова розмітки та стилів",
+      "overallDemand": 4,
+      "platformDemand": {
+        "Djinni": 33,
+        "DOU": 0,
+        "Work.ua": 40,
+        "Robota.ua": 20
+      },
+      "timeToLearn": "1 тиждень",
+      "description": "Сучасна utility-first стилізація та препроцесори CSS, які використовуються у 80% нових React/Vue проєктів.",
+      "resources": [
+        {
+          "type": "book",
+          "title": "Tailwind CSS Documentation",
+          "url": "https://tailwindcss.com/docs",
+          "lang": "EN",
+          "free": true
+        }
+      ],
+      "levels": [
+        "Базовий",
+        "Просунутий",
+        "Бог"
+      ]
+    }
+  ],
+  "vacancies": [
+    {
+      "id": "dou-365404",
+      "title": "Інженер-розробник вбудованої електроніки",
+      "company": "DroneOps",
+      "platform": "DOU",
+      "salary": "$700–1800",
+      "location": "Віддалено / Україна",
+      "direction": "General IT",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/droneops-ltd/vacancies/365404/?from=list_hot",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Ми — компанія, що створює інноваційні продукти у сфері безпілотних авіаційних систем, зосереджена на автономності та навігації БпЛА."
+    },
+    {
+      "id": "dou-322268",
+      "title": "English teacher (online)",
+      "company": "&nbsp;All Right",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "General IT",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/allright/vacancies/322268/?from=list_hot",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "All Right is a leading Ukrainian IT company that has been helping children worldwide learn English with ease and enjoyment for 8 years!"
+    },
+    {
+      "id": "dou-376217",
+      "title": "Trainee/Junior Manual QA Engineer",
+      "company": "&nbsp;Futurra Group",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/futurra-group/vacancies/376217/?from=list_hot",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "Futurra Group — українська мультипродуктова IT-компанія. З 2016 року ми запускаємо та масштабуємо кросплатформенні продукти для глобального ринку. Сьогодні нашими застосунками користуються 100+ млн людей у світі. Зараз ми в пошуку Junior Manual QA Engineer, до нашого AI-продукту."
+    },
+    {
+      "id": "dou-366910",
+      "title": "Інструктор з FPV (UAV)",
+      "company": "&nbsp;Everstar",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "General IT",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/everstar/vacancies/366910/?from=list_hot",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Ми — EVERSTAR, перша рекрутингова агенція в MilTech для тих, хто готовий створювати технологічне майбутнє. Але досить про нас, розказуємо про вакансію."
+    },
+    {
+      "id": "dou-332973",
+      "title": "Sales Manager/ Менеджер з продажів",
+      "company": "&nbsp;Glovo",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "General IT",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/glovo/vacancies/332973/?from=list_hot",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Якщо ти тут — значить шукаєш новий виклик і хочеш впливати на реальні зміни. Glovo — це не просто застосунок."
+    },
+    {
+      "id": "dou-352950",
+      "title": "Junior Creative Animator",
+      "company": "&nbsp;Perion",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "General IT",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/septa-digital-agency/vacancies/352950/?from=list_hot",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Junior Creative Animator Perion’s Creative Services team builds the ads that people actually notice. We produce high-impact motion content across social, CTV, DOOH, and display, and the work is visible, measurable, and varied. This role is an entry point into that world."
+    },
+    {
+      "id": "dou-357598",
+      "title": "Startup Business Associate",
+      "company": "&nbsp;A-Players",
+      "platform": "DOU",
+      "salary": "$800–2000",
+      "location": "Віддалено / Україна",
+      "direction": "General IT",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/a-players-recruiting/vacancies/357598/?from=list_hot",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "About A-Players A-Players is a talent and management company that has grown to $1.5M+ ARR over 7+ years, bootstrapped."
+    },
+    {
+      "id": "dou-273198",
+      "title": "Technical Support Specialist (IT)",
+      "company": "&nbsp;UniTalk",
+      "platform": "DOU",
+      "salary": "$700–1200",
+      "location": "Віддалено / Україна",
+      "direction": "General IT",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/unitalk/vacancies/273198/?from=list_hot",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Привіт! Ми — UniTalk, міжнародна продуктова IT-компанія, яка створює к��мплексні рішення для бізнес-комунікацій з використанням штучного інтелекту."
+    },
+    {
+      "id": "dou-353673",
+      "title": "Junior Technical Support Manager",
+      "company": "&nbsp;UniTalk",
+      "platform": "DOU",
+      "salary": "$600–900",
+      "location": "Віддалено / Україна",
+      "direction": "General IT",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/unitalk/vacancies/353673/?from=list_hot",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Привіт! Ми — UniTalk, міжнародна продуктова IT-компанія, яка створює комплексні рішення для бізнес-комунікацій з використанням штучного інтелекту."
+    },
+    {
+      "id": "dou-377328",
+      "title": "TikTok Live Host — HabitONE",
+      "company": "&nbsp;SKELAR",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "General IT",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/skelar/vacancies/377328/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Що варто знати про SKELAR? Це венчур-білдер — іншими словами, компанія, яка будує компанії. З нами фаундери створюють consumer-бізнеси, які стають лідерами на глобальних ринках EdTech, Mental health, Petcare, FashionTech та інших."
+    },
+    {
+      "id": "dou-351013",
+      "title": "Junior Account manager (PDL UA)",
+      "company": "&nbsp;Treeum",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "General IT",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/treeum/vacancies/351013/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Treeum шукає в команду кандидата на позицію «Акаунт менеджер (PDL UA)», який буде частиною нашого продукту SalesDoubler, що є міжнаро��ною CPA-мережею, яка з 2012 року об’єднує інтереси міжнародних рекламодавців та топових вебмайстрів у вертикалях Fintech, E-commerce, Services,..."
+    },
+    {
+      "id": "dou-377316",
+      "title": "Junior Operations Manager",
+      "company": "&nbsp;Innovation Group",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "General IT",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/innovation-group/vacancies/377316/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "The main focus of this role is to manage the marketing calendar, coordinate the production of campaign materials, and ensure timely execution of promotional activities aligned with key sporting events across our core markets."
+    },
+    {
+      "id": "dou-377295",
+      "title": "Independent Sales Agent",
+      "company": "NICKSON",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "General IT",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/nickson/vacancies/377295/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "We’re looking for an Independent Sales Agent to help NICKSON grow by attracting new clients for our IT services. NICKSON builds scalable web and mobile applications, custom business systems, CRM solutions, and AI-powered automation tools."
+    },
+    {
+      "id": "dou-377284",
+      "title": "Support Manager (SaaS, English-speaking customers)",
+      "company": "&nbsp;White Digital",
+      "platform": "DOU",
+      "salary": "до&nbsp;$1300",
+      "location": "Віддалено / Україна",
+      "direction": "General IT",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/white-digital/vacancies/377284/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "About product Our product is an AI marketing service for solo founders and small teams. Our customers are English-speaking founders from all over the world. They reach us through the website chat (Crisp) and the support inbox. An AI agent handles the first line."
+    },
+    {
+      "id": "dou-373466",
+      "title": "Recruiter (RnD)",
+      "company": "&nbsp;AUDM",
+      "platform": "DOU",
+      "salary": "$1200–1700",
+      "location": "Віддалено / Україна",
+      "direction": "General IT",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/association-of-ukrainian-defense-manufacturers/vacancies/373466/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Понад 10 років ми розвиваємо технологічні рішення та будуємо сильні команди в Україні. За цей час компанія виросла в масштабну команду, а разом із нею змінюється і наш підхід до пошуку людей."
+    },
+    {
+      "id": "dou-377280",
+      "title": "Trainee Data Analyst (JustDone)",
+      "company": "&nbsp;Boosters",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/boosters/vacancies/377280/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Привіт! На зв’язку Boosters Boosters — це українська продуктова компанія. Ми створюємо глобальні продукти в сферах EdTech, Productivity та Wellness, які несуть цінність для 60 мільйонів людей."
+    },
+    {
+      "id": "dou-377253",
+      "title": "Junior Web Software Engineer (AI-Assisted Development)",
+      "company": "&nbsp;A-listware",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "General IT",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/a-listware/vacancies/377253/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Our Customer: A global manufacturer of high-performance insulation and building envelope solutions, operating production facilities across multiple countries."
+    },
+    {
+      "id": "dou-356183",
+      "title": "Інженер‑конструктор (машинобудування)",
+      "company": "&nbsp;Rovertech",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "General IT",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/rovertech/vacancies/356183/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "RoverTech — українська оборонно‑технологічна компанія, що створює сучасні роботизовані системи та наземні безпілотні комплекси, які змінюють хід війни та зберігають життя військових. Наші технології працюють поруч із захисниками України та допомагають здобувати перемогу."
+    },
+    {
+      "id": "dou-377228",
+      "title": "Trainee Creative Producer",
+      "company": "&nbsp;appflame",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "General IT",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/appflame/vacancies/377228/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "appflame — a Ukrainian IT company building world-class products: Hily, Taimi, AdConnect. Who we are today: 7 years on the market, 500+ employees, offices in Kyiv, London, and Limassol, plus a coworking space in Warsaw."
+    },
+    {
+      "id": "dou-284576",
+      "title": "Бізнес аналітик Odoo",
+      "company": "&nbsp;Netframe",
+      "platform": "DOU",
+      "salary": "$700–1200",
+      "location": "Віддалено / Україна",
+      "direction": "General IT",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/netframe/vacancies/284576/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Ми шукаємо енергійного та проактивного Бізнес Аналітика, який прагне розвиватися разом з нами! Якщо тобі цікаво працювати з Odoo — однією з провідних ERP систем — і хочеш допомагати компаніям оптимізувати їхні бізнес-процеси, тоді ця вакансія саме для тебе."
+    },
+    {
+      "id": "dou-377115",
+      "title": "Full Stack Engineer intern",
+      "company": "&nbsp;tsukat",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Frontend",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/tsukat/vacancies/377115/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Будь ласка, ознайомтесь з цим документом перед подачею заявки. Для подачі заявки на стажування заповніть цю форму. Шукаєш можливість застосувати свої знання та навички на практиці, працюючи над реальними проєктами? Приходь на стажування в tsukat."
+    },
+    {
+      "id": "dou-373160",
+      "title": "Frontend Developer (Angular v18+)",
+      "company": "&nbsp;ThingsBoard",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Frontend",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/thingsboard-inc/vacancies/373160/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "ThingsBoard is a B2B IT product company. Our core product is the ThingsBoard IoT platform, and around it we’ve built an ecosystem of standalone products and add-ons."
+    },
+    {
+      "id": "dou-376277",
+      "title": "Junior Frontend Developer",
+      "company": "&nbsp;TenThousand",
+      "platform": "DOU",
+      "salary": "$400–800",
+      "location": "Віддалено / Україна",
+      "direction": "Frontend",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/tenthousand/vacancies/376277/",
+      "requiredSkills": [
+        "javascript",
+        "typescript",
+        "react"
+      ],
+      "optionalSkills": [],
+      "summary": "Шукаємо Frontend-розробника ( JavaScript + TypeScript / React / React Native), який готовий виходити за рамки звичного, рости швидко і при цьому отримувати підтримку від крутої команди."
+    },
+    {
+      "id": "dou-375936",
+      "title": "Trainee Angular Developer",
+      "company": "&nbsp;ELEKS",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Frontend",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/eleks/vacancies/375936/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "ELEKS Software Engineering and Development Office is looking for a Trainee Angular Developer in Lviv, Ternopil, or Ivano-Frankivsk. ABOUT PROJECT Our client is a large financial services company, based in the USA."
+    },
+    {
+      "id": "dou-375370",
+      "title": "Junior Frontend Developer",
+      "company": "&nbsp;!FESTCloud.ai",
+      "platform": "DOU",
+      "salary": "$400–800",
+      "location": "Віддалено / Україна",
+      "direction": "Frontend",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/festcloud-ai/vacancies/375370/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "We’re looking for a motivated and curious Trainee / Junior Frontend Developer who wants to grow fast and build real-world products."
+    },
+    {
+      "id": "dou-332467",
+      "title": "Fullstack-розробник",
+      "company": "&nbsp;429 окрема бригада безпілотних систем «АХІЛЛЕС»",
+      "platform": "DOU",
+      "salary": "$500–2800",
+      "location": "Віддалено / Україна",
+      "direction": "Frontend",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/achilles_429brigade/vacancies/332467/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Обов’язки розробка нового функціоналу та підтримка існуючого; написання якісного, відтестованого коду з використанням кращих практик розробки; проєктування архітектури та втілення спроєктованих рішень; технічна підтримка користувачів систем."
+    },
+    {
+      "id": "dou-346075",
+      "title": "Python developer",
+      "company": "Partner Dev",
+      "platform": "DOU",
+      "salary": "до&nbsp;$1500",
+      "location": "Віддалено / Україна",
+      "direction": "Backend",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/partner-dev/vacancies/346075/",
+      "requiredSkills": [
+        "python"
+      ],
+      "optionalSkills": [],
+      "summary": "We’re building something meaningful and we need a sharp Python developer to build it with us. If you write clean code, care about architecture, and want to grow fast in a team that actually invests in its people, keep reading."
+    },
+    {
+      "id": "dou-376414",
+      "title": "Technical Support Engineer (weekend shifts)",
+      "company": "&nbsp;Uvik Software",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Backend",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/uvik-software/vacancies/376414/",
+      "requiredSkills": [
+        "python"
+      ],
+      "optionalSkills": [],
+      "summary": "We’re looking for a Technical (Python) Support Engineer to keep our production applications stable and fast during weekend shifts. You’ll handle incident triage, bug fixes, and small improvements while collaborating with the core team when escalation is needed."
+    },
+    {
+      "id": "dou-351678",
+      "title": "Python AI/ML Engineer (Junior)",
+      "company": "NDA Deftech Company",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Backend",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/miltech-nda-company/vacancies/351678/",
+      "requiredSkills": [
+        "python"
+      ],
+      "optionalSkills": [],
+      "summary": "Ми — українська продуктово-інженерна компанія у сфері DefTech, що спеціалізується на розробці та виробництві засобів цифрової обробки сигналів. Шукаємо Junior AI/ML Engineer, який хоче працювати над інженерними рішеннями у сфері розробки радіоелектронного обладнання."
+    },
+    {
+      "id": "dou-374417",
+      "title": "Програміст Python",
+      "company": "&nbsp;Батальйон SIGNUM",
+      "platform": "DOU",
+      "salary": "$1000–2000",
+      "location": "Віддалено / Україна",
+      "direction": "Backend",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/59-brigada-sbs/vacancies/374417/",
+      "requiredSkills": [
+        "python"
+      ],
+      "optionalSkills": [],
+      "summary": "Робота в команді розробників програмного забезпечення для батальйону безпілотних систем. Вакансія передбачає військову службу за контрактом. Підрозділ забезпечує логістику та оформлення кандидатів та має свою базу для проходження БЗВП."
+    },
+    {
+      "id": "dou-373954",
+      "title": "Junior Python AI Developer",
+      "company": "&nbsp;Evowill",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Backend",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/evowill/vacancies/373954/",
+      "requiredSkills": [
+        "python"
+      ],
+      "optionalSkills": [],
+      "summary": "About Us: Evowill is looking for a Junior Python AI Developer who is passionate about web development and eager to grow in a supportive and dynamic environment."
+    },
+    {
+      "id": "dou-373417",
+      "title": "QA Manual Engineer (iGaming)",
+      "company": "&nbsp;Uptowin",
+      "platform": "DOU",
+      "salary": "$1000–1500",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/uptowin/vacancies/373417/",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "Ми UpToWin — амбітна команда, яка створює сучасні сервіси для ринку iGaming USA. Ми швидко ростемо і шукаємо людей, які хочуть розвиватися разом з нами, впливати на продукт і бачити результат своєї роботи."
+    },
+    {
+      "id": "dou-377121",
+      "title": "QA Engineer intern",
+      "company": "&nbsp;tsukat",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/tsukat/vacancies/377121/",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "Будь ласка, ознайомтесь з цим документом перед подачею заявки. Для подачі заявки на стажування заповніть цю форму. Шукаєш можливість застосувати свої знання та навички на практиці, працюючи над реальними проєктами? Приходь на стажування в tsukat."
+    },
+    {
+      "id": "dou-367579",
+      "title": "Junior Manual QA Engineer",
+      "company": "Defense Tech",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/perfect-recruiting/vacancies/367579/",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "Ми — український розробник і виробник рішень, які вже застосовуються на полі бою в найгарячіших оборонних та наступальних операціях. Команда об’єднує фахівців із глибокою експертизою в розробці та виробництві. Відкриті до співпраці з ветеранами, ветеранками та їхніми близькими."
+    },
+    {
+      "id": "dou-359676",
+      "title": "Automation QA Engineer",
+      "company": "&nbsp;Хартія",
+      "platform": "DOU",
+      "salary": "$560–1700",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/13-brigada-operativnogo-priznachennya-hartiya/vacancies/359676/",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "ХТО МИ 13-та бригада оперативного призначення НГУ «Хартія» «Хартія» — бригада оперативного призначення Національної гвардії України. У бригаді працюють бойові, інженерні, технічні, логістичні, медичні та управлінські команди."
+    },
+    {
+      "id": "dou-372959",
+      "title": "Інженер з якості БПЛА",
+      "company": "&nbsp;Атлон Авіа",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/athlon-avia-unmanned-solutions/vacancies/372959/",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "Приє��нуйся до лідера безпілотної авіації України! Ми — українське науково-виробниче підприємство повного циклу, що створює передові технології у сфері БпЛА."
+    },
+    {
+      "id": "dou-336233",
+      "title": "Junior QC Specialist (PC Requirements Team)",
+      "company": "&nbsp;Ubisoft",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/ubisoft/vacancies/336233/",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "Company Description Ubisoft is a global leader in gaming with teams across the world creating original and memorable gaming experiences, from Assassin’s Creed, Rainbow Six, to Just Dance and more. We believe diverse perspectives help both players and teams thrive."
+    },
+    {
+      "id": "dou-372568",
+      "title": "Інженер з тестування БПЛА та систем звʼязку (Hardware &amp; Drone Test Engineer)",
+      "company": "&nbsp;Strix Air",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/strix-air/vacancies/372568/",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "Локація: Дніпро Формат роботи: Польовий / полігонний, стендовий Зайнятість: Повна Ми шукаємо фахівця з тестування безпілотних систем та радіообладнання, який відповідатиме за верифікацію апаратної частини, оцінку стійкості зв’язку та перевірку відповідності дронів тактико-технічним..."
+    },
+    {
+      "id": "dou-376004",
+      "title": "Field Engineer",
+      "company": "Hiring Miltech (NDA)",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/hiring-miltech-nda/vacancies/376004/",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "Ми — стрімко зростаюча продуктова miltech-компанія, що створює власний продукт повного циклу: від ідеї та розробки до виробництва, тестування та постійного вдосконалення."
+    },
+    {
+      "id": "dou-371624",
+      "title": "Application Security Engineer / Penetration Tester (Junior)",
+      "company": "&nbsp;Міністерство оборони України",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/mod-of-ukraine/vacancies/371624/",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "Ми шукаємо вмотивованого початківця у сфері безпеки застосунків, який хоче зростати разом із командою: вчитися знаходити вразливості, працювати з інструментами автоматичного сканування та поступово занурюватися у практики DevSecOps і SSDLC."
+    },
+    {
+      "id": "dou-345224",
+      "title": "Junior QC Specialist (Online Requirements Team)",
+      "company": "&nbsp;Ubisoft",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/ubisoft/vacancies/345224/",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "Job Description As a Specialized tester, you will be responsible for checking and making sure a game respects all the intended Online Requirements."
+    },
+    {
+      "id": "dou-375400",
+      "title": "Junior QA Engineer",
+      "company": "&nbsp;WebbyLab",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/webbylab/vacancies/375400/",
+      "requiredSkills": [
+        "javascript",
+        "react",
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "WebbyLab is a Ukrainian IT outsourcing company. We develop scalable and feature-rich Web and Mobile applications using Node.js, React, React Native, and PHP stack. We have successfully completed projects for Daimler Mercedes-Benz, Bayer, Pfizer, Uber, Ezlo, and others."
+    },
+    {
+      "id": "dou-371684",
+      "title": "Trainee QA Engineer (IoT projects)",
+      "company": "&nbsp;Lemberg Solutions",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/lemberg-solutions/vacancies/371684/",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "Lemberg Solutions is, above all, a group of passionate professionals led by a core team that have been meticulously selected over the last 15 years. We are based in Lviv, Rivne, and Lutsk, and opened GmbH in Hamburg, Germany. At LS, people come first."
+    },
+    {
+      "id": "dou-367641",
+      "title": "Junior Manual QA Engineer (Device)",
+      "company": "&nbsp;Ajax Systems",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/ajax-systems/vacancies/367641/",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "Ajax Systems — міжнародна технологічна компанія і найбільший у Європі виробник охоронних систем. Продуктам Ajax довіряють уже понад 4,5 мільйони кінцевих користувачів і 330 тисяч PRO-користувачів у більш ніж 180 країнах."
+    },
+    {
+      "id": "dou-374914",
+      "title": "Junior QA (AI-focused)",
+      "company": "&nbsp;Bini Games",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/bini-games/vacancies/374914/",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "Bini Games — це українська продуктова компанія, яка створила більше 20-ти дитячих розвиваючих додатків."
+    },
+    {
+      "id": "dou-374899",
+      "title": "QA Engineer",
+      "company": "&nbsp;Swivl",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/swivl/vacancies/374899/",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "We are looking for a QA Engineer to help us ensure a reliable, high-quality experience across our web, mobile, and connected product ecosystem."
+    },
+    {
+      "id": "dou-374579",
+      "title": "QA Engineer (Mobile + Web) — Junior+",
+      "company": "&nbsp;Blocksport",
+      "platform": "DOU",
+      "salary": "від&nbsp;$500",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/blocksport/vacancies/374579/",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "Blocksport is a white-label digital experience platform for sports clubs. We rebrand one core platform for each client. The product covers ticketing, payments, content, predictions, chat, wallet, streaming, SSO and sports data integrations."
+    },
+    {
+      "id": "dou-374515",
+      "title": "Junior QA Engineer (QA Server Department)",
+      "company": "&nbsp;Ajax Systems",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/ajax-systems/vacancies/374515/",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "Ajax Systems — міжнародна технологічна компанія і найбільший у Європі виробник охоронних систем. Команда продуктової розробки шукає QA Engineer, який підключиться до тестування back-end частини екосистеми Ajax."
+    },
+    {
+      "id": "dou-374378",
+      "title": "QA Specialist (Gamedev)",
+      "company": "&nbsp;RetroStyle Games",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/retrostyle-games/vacancies/374378/",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "Привіт! :) Ми — RetroStyle Games, українська game art &amp; game development студія з 15+ роками досвіду. Ми створюємо власні ігри та допомагаємо видавцям з усього світу створювати якісний арт для ігор. З нашими іграми можеш ознайомитися тут."
+    },
+    {
+      "id": "dou-374359",
+      "title": "Junior/Middle QA",
+      "company": "&nbsp;148-ма окрема артилерійська бригада ДШВ",
+      "platform": "DOU",
+      "salary": "$700–1600",
+      "location": "Віддалено / Україна",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/148-dshv/vacancies/374359/",
+      "requiredSkills": [
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "Про проєкт. Команда, що розробляє й підтримує Систему Вавілон — цифрову екосистему для артилерійської бригади з підсистемами вогневого контролю та розвідки."
+    },
+    {
+      "id": "dou-348819",
+      "title": "Node.js Backend Developer / AdTech",
+      "company": "&nbsp;Spalah",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Backend",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/spalah-tech/vacancies/348819/",
+      "requiredSkills": [
+        "javascript"
+      ],
+      "optionalSkills": [],
+      "summary": "Spalah is a Ukrainian venture builder that connects ambitious tech businesses with the international stage, fostering an ecosystem for rapid growth. We unite visionary founders and diverse talent to create companies that drive global progress."
+    },
+    {
+      "id": "dou-368766",
+      "title": "Strong Junior Full-stack (React+Node.js)",
+      "company": "Partner Dev",
+      "platform": "DOU",
+      "salary": "до&nbsp;$1500",
+      "location": "Віддалено / Україна",
+      "direction": "Frontend",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/partner-dev/vacancies/368766/",
+      "requiredSkills": [
+        "javascript",
+        "react"
+      ],
+      "optionalSkills": [],
+      "summary": "Our team is looking for a talented Junior Fullstack Developer. If you have at least 6 months of hands-on experience with React and Node.js, a strong desire to grow, and love solving technical challenges — we’d be happy to meet you!"
+    },
+    {
+      "id": "dou-375554",
+      "title": "Junior Fullstack Developer (Angular+.NET)",
+      "company": "&nbsp;inVerita",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Frontend",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/inveritasoft/vacancies/375554/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Project Description: The project is about a comprehensive healthcare platform focused on fertility treatment management, helping patients, doctors, pharmacists, and pharmacies coordinate treatment cycles and medications."
+    },
+    {
+      "id": "dou-363540",
+      "title": "Junior/Trainee .NET Developer",
+      "company": "&nbsp;Loansure",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Backend",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/monster-lead-group/vacancies/363540/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Loansure — продуктова компанія зі США, яка будує AI для іпотечної індустрії."
+    },
+    {
+      "id": "dou-377203",
+      "title": "Data Scientist",
+      "company": "Partner Dev",
+      "platform": "DOU",
+      "salary": "до&nbsp;$1500",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/partner-dev/vacancies/377203/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "You already know how to train a model and calculate metrics, but you want your work to reach real users instead of staying in a notebook?"
+    },
+    {
+      "id": "dou-376059",
+      "title": "Trainee Data Scientist",
+      "company": "&nbsp;Digis",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/digis/vacancies/376059/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "About the Company We are a European IT company with 200+ specialists delivering SaaS platforms, enterprise solutions, and cloud-native products for clients worldwide. We focus on building strong, long-term teams and supporting continuous professional growth."
+    },
+    {
+      "id": "dou-375482",
+      "title": "Audio Data Analyst (Intern)",
+      "company": "&nbsp;SoftElegance",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/softelegance/vacancies/375482/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "We are looking for a Audio Analyst Intern to join a-Gnostics team. This internship is a great opportunity for students and young people who are motivated to learn, develop their skills, gain hands-on experience, and grow professionally."
+    },
+    {
+      "id": "dou-376597",
+      "title": "Junior Java / Full-Stack Developer AI-Native Software Engineering",
+      "company": "&nbsp;Logivations",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Backend",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/logivations/vacancies/376597/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "LVIV, UKRAINE | OFFICE-BASED | FULL-TIME | JUNIOR / EARLY CAREER Dear candidates, please note this is a hybrid position, where office attendance is required from time to time! Candidates from other cities, not willing to relocate, and other countries won`t be considered!"
+    },
+    {
+      "id": "dou-374706",
+      "title": "Backend Developer",
+      "company": "&nbsp;WinWin.Travel",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Backend",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/winwin-travel/vacancies/374706/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Привіт, майбутній колего! Це не чергова вакансія з банальним переліком обов’язків. Це — запрошення у AI-first стартап, який вирішив зламати правила гри в індустрії подорожей. Читай до кінця, щоб не пропустити найважливіше! Хто я та чому пишу Мене звати Вадим, мені 33."
+    },
+    {
+      "id": "dou-377194",
+      "title": "Junior Business Analyst / Project Coordinator to the COO Office",
+      "company": "&nbsp;Top Netics",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/top-netics/vacancies/377194/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "About Top Netics Top Netics is an AI-native venture builder. We co-found and ship AI, blockchain, fintech and Web3 products and act as technical co-founders to the founders we work with."
+    },
+    {
+      "id": "dou-377183",
+      "title": "Business Analyst ERP (Finance)",
+      "company": "&nbsp;Vyriy Industries",
+      "platform": "DOU",
+      "salary": "$1800–2200",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/vyriy-drone/vacancies/377183/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Vyriy Industries — українська Defense Tech компанія, що розробляє та серійно виробляє автономні системи для роботи в реальних бойових умовах для понад 200 підрозділів Сил оборони України."
+    },
+    {
+      "id": "dou-377178",
+      "title": "OSINT Analyst",
+      "company": "&nbsp;AUDM",
+      "platform": "DOU",
+      "salary": "до&nbsp;$1400",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/association-of-ukrainian-defense-manufacturers/vacancies/377178/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Шукаємо спеціаліста, який візьме на себе відповідальність за безпекові моменти всередині компанії."
+    },
+    {
+      "id": "dou-351310",
+      "title": "Аналітик обробки інформації",
+      "company": "&nbsp;427-а окрема бригада безпілотних систем Рарог",
+      "platform": "DOU",
+      "salary": "$450–1600",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/427-i-okremii-polk-bezpilotnih-sistem-rarog/vacancies/351310/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "427-а окрема бригада безпілотних систем «РАРОГ» займає гідне місце серед всіх «літаючих» підрозділів Збройних Сил України за кількістю знищеної ворожої техніки та живої сили противника. Бригада розвивається та створює нові команди."
+    },
+    {
+      "id": "dou-376675",
+      "title": "Junior Marketing Analyst — Leaply",
+      "company": "&nbsp;SKELAR",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/skelar/vacancies/376675/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Junior Marketing Analyst — Leaply Hi! We’re Leaply — a product ecosystem in the Health &amp; Wellness niche. Our mission is to create a platform users can fully trust with their health, so they can live healthier on autopilot."
+    },
+    {
+      "id": "dou-376395",
+      "title": "Junior Business Analyst",
+      "company": "&nbsp;Міністерство оборони України",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/mod-of-ukraine/vacancies/376395/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Шукаємо Junior Business Analyst, який/яка розпочинає або вже будує кар’єру в бізнес-аналізі та прагне розвиватися в напрямі цифрових продуктів і сервісів."
+    },
+    {
+      "id": "dou-321442",
+      "title": "Business Analyst Trainee (Individual Training, BA Internship)",
+      "company": "&nbsp;SysGears",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/sysgears/vacancies/321442/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Required Skills Knowledge of the Business Analysis basics Strong critical thinking skills Superb communication skills Good organizational and leadership instincts Upper-intermediate English level (speaking and writing) Personal qualities You are detailed-oriented..."
+    },
+    {
+      "id": "dou-353759",
+      "title": "Junior Cyber Security Analyst L1",
+      "company": "A4362",
+      "platform": "DOU",
+      "salary": "$500–1200",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/a4362/vacancies/353759/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Молодший аналітик з кібербезпеки Запрошуємо до команди кібербезпеки Військово-Морських Сил ЗСУ молодшого аналітика SOC (L1), який долучиться до виявлення, аналізу та реагування на кіберзагрози."
+    },
+    {
+      "id": "dou-376208",
+      "title": "Marketing Analyst",
+      "company": "&nbsp;Genesis",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/genesis-technology-partners/vacancies/376208/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Привіт! Маємо чудову можливість для тебе долучитися до одного з наших стрімко зростаючих бізнесів, який працює над social-продуктами у сфері відеострімінгу."
+    },
+    {
+      "id": "dou-376201",
+      "title": "Junior Payment Analyst",
+      "company": "&nbsp;Genesis",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/genesis-technology-partners/vacancies/376201/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Привіт! Маємо чудову можливість для тебе долучитися до одного з наших стрімко зростаючих бізнесів, який працює над social продуктами у сфері відеострімінгу."
+    },
+    {
+      "id": "dou-376084",
+      "title": "Junior MarTech Automation Specialist (Impulse)",
+      "company": "&nbsp;Headway Inc",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/headway-inc/vacancies/376084/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Impulse is a brain training app that helps people keep their brains sharp with bite-sized fun games and logic puzzles. Impulse is the world’s most downloaded app in the Brain Training category with over 100 million downloads."
+    },
+    {
+      "id": "dou-376083",
+      "title": "AI Operations Analyst (Impulse)",
+      "company": "&nbsp;Headway Inc",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/headway-inc/vacancies/376083/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Impulse is a brain training app that helps people keep their brains sharp with bite-sized fun games and logic puzzles. Impulse is the world’s most downloaded app in the Brain Training category with over 100 million downloads."
+    },
+    {
+      "id": "dou-376078",
+      "title": "Product &amp; Operations Analyst (Impulse)",
+      "company": "&nbsp;Headway Inc",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/headway-inc/vacancies/376078/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Impulse is a brain training app that helps people keep their brains sharp with bite-sized fun games and logic puzzles. Impulse is the world’s most downloaded app in the Brain Training category with over 100 million downloads."
+    },
+    {
+      "id": "dou-259752",
+      "title": "Junior Technical Analyst",
+      "company": "&nbsp;Solidgate",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/solidgate/vacancies/259752/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Our Mission and Vision At Solidgate, our mission is clear: to empower outstanding entrepreneurs to build exceptional internet companies. We exist to fuel the builders — the ones shaping the digital economy — with the financial infrastructure they deserve."
+    },
+    {
+      "id": "dou-249966",
+      "title": "Trainee/Junior IT Business Analyst​",
+      "company": "&nbsp;BaDM",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/tov-badm/vacancies/249966/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "«БаДМ» — національний дистриб’ютор фармацевтичного ринку України. Ми віримо в силу нашої команди та забезпечуємо ліками всю Україну! Ви мрієте про стабільну роботу в класній команді? Бажаєте кожного дня дбати про здоров’я українців? Тоді Вам точно до нас!"
+    },
+    {
+      "id": "dou-375576",
+      "title": "BetAdmin",
+      "company": "&nbsp;DATA.BET",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/databet/vacancies/375576/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Ми шукаємо уважного до деталей BetAdmin, який приєднається до нашої команди Sports Operations."
+    },
+    {
+      "id": "dou-257791",
+      "title": "Junior Operations Analyst",
+      "company": "&nbsp;Solidgate",
+      "platform": "DOU",
+      "salary": "Не вказана",
+      "location": "Віддалено / Україна",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з DOU",
+      "url": "https://jobs.dou.ua/companies/solidgate/vacancies/257791/",
+      "requiredSkills": [
+        "sql"
+      ],
+      "optionalSkills": [],
+      "summary": "Our Mission and Vision At Solidgate, our mission is clear: to empower outstanding entrepreneurs to build exceptional internet companies. We exist to fuel the builders — the ones shaping the digital economy — with the financial infrastructure they deserve."
+    },
+    {
+      "id": "real-work.ua-1",
+      "title": "Junior SQL / Database Administrator",
+      "company": "Rozetka UA",
+      "platform": "Work.ua",
+      "salary": "28 000 – 35 000 грн",
+      "location": "Київ / Гібрид",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з Work.ua",
+      "url": "https://www.work.ua/jobs/sql-junior/",
+      "requiredSkills": [
+        "sql",
+        "postgresql",
+        "mysql"
+      ],
+      "optionalSkills": [],
+      "summary": "Робота з базами даних PostgreSQL та MySQL, оптимізація індексів, написання аналітичних звітів для бізнесу."
+    },
+    {
+      "id": "real-work.ua-2",
+      "title": "Junior Frontend Developer (React + Tailwind)",
+      "company": "Comfy Digital",
+      "platform": "Work.ua",
+      "salary": "25 000 – 32 000 грн",
+      "location": "Дніпро / Дистанційно",
+      "direction": "Frontend",
+      "postedAgo": "Свіжа з Work.ua",
+      "url": "https://www.work.ua/jobs/react-frontend-junior/",
+      "requiredSkills": [
+        "react",
+        "html-css",
+        "rest-api",
+        "tailwind"
+      ],
+      "optionalSkills": [],
+      "summary": "Розробка інтерфейсів користувача інтернет-магазину на React, HTML5, CSS3, Tailwind CSS та взаємодія з REST API."
+    },
+    {
+      "id": "real-work.ua-3",
+      "title": "Молодший фахівець з ручного тестування (QA)",
+      "company": "Нова Пошта (Центр інновацій)",
+      "platform": "Work.ua",
+      "salary": "24 000 – 30 000 грн",
+      "location": "Полтава / Київ",
+      "direction": "QA / Testing",
+      "postedAgo": "Свіжа з Work.ua",
+      "url": "https://www.work.ua/jobs/qa-tester-junior/",
+      "requiredSkills": [
+        "sql",
+        "rest-api",
+        "qa-theory"
+      ],
+      "optionalSkills": [],
+      "summary": "Функціональне тестування логістичних модулів, робота з Jira, валідація API у Postman, базові SQL запити для верифікації посилок."
+    },
+    {
+      "id": "real-robota.ua-4",
+      "title": "Junior Data Analyst (Power BI + SQL)",
+      "company": "Епіцентр К",
+      "platform": "Robota.ua",
+      "salary": "30 000 – 38 000 грн",
+      "location": "Київ",
+      "direction": "Data Analytics",
+      "postedAgo": "Свіжа з Robota.ua",
+      "url": "https://robota.ua/company/epicentr-junior-analyst",
+      "requiredSkills": [
+        "sql",
+        "excel-bi"
+      ],
+      "optionalSkills": [],
+      "summary": "Побудова бізнес-дашбордів у Power BI, складні розрахунки на SQL, візуалізація продажів та трендів маркетплейсу."
+    },
+    {
+      "id": "real-robota.ua-5",
+      "title": "Junior Python Developer (Парсинг та мікросервіси)",
+      "company": "UkrTech Solutions",
+      "platform": "Robota.ua",
+      "salary": "26 000 – 34 000 грн",
+      "location": "Львів / Remote",
+      "direction": "Backend",
+      "postedAgo": "Свіжа з Robota.ua",
+      "url": "https://robota.ua/company/python-junior-backend",
+      "requiredSkills": [
+        "postgresql",
+        "python",
+        "fastapi-django",
+        "docker"
+      ],
+      "optionalSkills": [],
+      "summary": "Розробка веб-сервісів на FastAPI/Django, парсинг відкритих джерел, робота з PostgreSQL та базовим Docker."
+    },
+    {
+      "id": "real-robota.ua-6",
+      "title": "Trainee Fullstack Developer (Node.js & React)",
+      "company": "Prom.ua Ecosystem",
+      "platform": "Robota.ua",
+      "salary": "22 000 – 28 000 грн",
+      "location": "Київ / Дистанційно",
+      "direction": "Fullstack",
+      "postedAgo": "Свіжа з Robota.ua",
+      "url": "https://robota.ua/company/prom-trainee-fullstack",
+      "requiredSkills": [
+        "git",
+        "javascript",
+        "typescript",
+        "react",
+        "mongodb"
+      ],
+      "optionalSkills": [],
+      "summary": "Підтримка сервісів електронної комерції. Стек: JavaScript, TypeScript, React, Node.js, MongoDB, Git."
+    },
+    {
+      "id": "vac-data-analyst-dou",
+      "title": "Junior Data / Product Analyst",
+      "company": "Genesis Tech (Ecosystem)",
+      "platform": "DOU",
+      "salary": "$700 – $1000",
+      "location": "Київ / Гібрид",
+      "direction": "Data Analytics",
+      "postedAgo": "2 дні тому",
+      "requiredSkills": [
+        "sql",
+        "python",
+        "excel-bi",
+        "postgresql"
+      ],
+      "optionalSkills": [
+        "git"
+      ],
+      "summary": "Аналіз продуктових метрик (Retention, LTV, ARPU), написання SQL-запитів, побудова дашбордів у Power BI та базова обробка даних на Python."
+    },
+    {
+      "id": "vac-backend-djinni",
+      "title": "Junior Python Backend Developer",
+      "company": "TechSpark Ukraine",
+      "platform": "Djinni",
+      "salary": "$600 – $900",
+      "location": "Remote (Україна)",
+      "direction": "Backend",
+      "postedAgo": "Сьогодні",
+      "requiredSkills": [
+        "python",
+        "fastapi-django",
+        "sql",
+        "postgresql",
+        "git",
+        "rest-api"
+      ],
+      "optionalSkills": [
+        "docker",
+        "mongodb"
+      ],
+      "summary": "Розробка мікросервісів на FastAPI, робота з БД PostgreSQL через SQLAlchemy, інтеграція сторонніх REST API."
+    },
+    {
+      "id": "vac-frontend-djinni",
+      "title": "Junior Frontend Developer (React + TS)",
+      "company": "NovaDigital Studio",
+      "platform": "Djinni",
+      "salary": "$600 – $850",
+      "location": "Remote",
+      "direction": "Frontend",
+      "postedAgo": "1 день тому",
+      "requiredSkills": [
+        "html-css",
+        "javascript",
+        "typescript",
+        "react",
+        "git",
+        "rest-api",
+        "tailwind"
+      ],
+      "optionalSkills": [
+        "docker"
+      ],
+      "summary": "Створення сучасних SPA-додатків на React та TypeScript, робота з REST API, адаптивна верстка за макетами Figma."
+    },
+    {
+      "id": "vac-qa-workua",
+      "title": "Junior Manual QA Engineer",
+      "company": "FinTech Solutions UA",
+      "platform": "Work.ua",
+      "salary": "25 000 – 32 000 грн",
+      "location": "Львів / Remote",
+      "direction": "QA Manual",
+      "postedAgo": "3 дні тому",
+      "requiredSkills": [
+        "qa-theory",
+        "sql",
+        "rest-api",
+        "html-css",
+        "git"
+      ],
+      "optionalSkills": [
+        "postgresql"
+      ],
+      "summary": "Тестування веб- та мобільних додатків, написання тест-кейсів, перевірка API через Postman та базові перевірки у базі даних за допомогою SQL."
+    },
+    {
+      "id": "vac-bi-robotaua",
+      "title": "Молодший аналітик даних (BI / SQL)",
+      "company": "Рітейл Груп Україна",
+      "platform": "Robota.ua",
+      "salary": "28 000 – 35 000 грн",
+      "location": "Київ / Дистанційно",
+      "direction": "Data Analytics",
+      "postedAgo": "Вчора",
+      "requiredSkills": [
+        "sql",
+        "excel-bi",
+        "mysql"
+      ],
+      "optionalSkills": [
+        "python",
+        "postgresql"
+      ],
+      "summary": "Формування звітів для комерційного відділу, автоматизація дашбордів у Power BI, вивантаження даних за допомогою SQL-запитів."
+    },
+    {
+      "id": "vac-fullstack-dou",
+      "title": "Trainee / Junior Fullstack Developer (JS/Python)",
+      "company": "SoftServe Academy Lab",
+      "platform": "DOU",
+      "salary": "$500 – $750",
+      "location": "Remote (Україна)",
+      "direction": "Fullstack",
+      "postedAgo": "4 дні тому",
+      "requiredSkills": [
+        "html-css",
+        "javascript",
+        "react",
+        "python",
+        "sql",
+        "git",
+        "rest-api"
+      ],
+      "optionalSkills": [
+        "docker",
+        "postgresql",
+        "typescript"
+      ],
+      "summary": "Робота в команді над внутрішніми сервісами компанії. Чудова позиція для тих, хто знає основи фронтенду та бекенду."
+    },
+    {
+      "id": "vac-dotnet-djinni",
+      "title": "Junior .NET / C# Backend Engineer",
+      "company": "EnterpriseCore UA",
+      "platform": "Djinni",
+      "salary": "$650 – $950",
+      "location": "Львів / Remote",
+      "direction": "Backend",
+      "postedAgo": "2 дні тому",
+      "requiredSkills": [
+        "csharp",
+        "sql",
+        "postgresql",
+        "git",
+        "rest-api"
+      ],
+      "optionalSkills": [
+        "docker",
+        "javascript"
+      ],
+      "summary": "Розробка корпоративних веб-сервісів на C# (.NET 8), оптимізація SQL-запитів у PostgreSQL та написання юніт-тестів."
+    },
+    {
+      "id": "vac-vue-workua",
+      "title": "Junior Vue.js Frontend Розробник",
+      "company": "WebCraft Agency",
+      "platform": "Work.ua",
+      "salary": "27 000 – 36 000 грн",
+      "location": "Київ / Дистанційно",
+      "direction": "Frontend",
+      "postedAgo": "Сьогодні",
+      "requiredSkills": [
+        "html-css",
+        "javascript",
+        "vue",
+        "tailwind",
+        "git",
+        "rest-api"
+      ],
+      "optionalSkills": [
+        "typescript"
+      ],
+      "summary": "Підтримка та розробка клієнтських кабінетів для e-commerce проєктів на Vue 3 та Tailwind CSS."
+    },
+    {
+      "id": "vac-aqa-dou",
+      "title": "Junior QA Automation Engineer (Python)",
+      "company": "Ajax Systems (Junior Lab)",
+      "platform": "DOU",
+      "salary": "$700 – $950",
+      "location": "Київ",
+      "direction": "QA Automation",
+      "postedAgo": "5 днів тому",
+      "requiredSkills": [
+        "python",
+        "qa-theory",
+        "sql",
+        "rest-api",
+        "git",
+        "docker"
+      ],
+      "optionalSkills": [
+        "postgresql"
+      ],
+      "summary": "Автоматизація тестування API та веб-інтерфейсів на Python (Pytest), робота з Docker-оточенням та CI/CD."
+    },
+    {
+      "id": "vac-fullstack-robotaua",
+      "title": "Junior Web Developer (React + Node/Mongo)",
+      "company": "Digital Logistics UA",
+      "platform": "Robota.ua",
+      "salary": "30 000 – 40 000 грн",
+      "location": "Одеса / Remote",
+      "direction": "Fullstack",
+      "postedAgo": "3 дні тому",
+      "requiredSkills": [
+        "html-css",
+        "javascript",
+        "typescript",
+        "react",
+        "mongodb",
+        "git",
+        "rest-api"
+      ],
+      "optionalSkills": [
+        "docker",
+        "tailwind"
+      ],
+      "summary": "Розробка CRM-системи для логістики. Використання стеку React, TypeScript та бази даних MongoDB."
+    }
+  ]
+}
