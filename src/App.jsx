@@ -32,8 +32,11 @@ import {
   PlusCircle,
   Sliders,
   Flame,
-  Edit3
+  Edit3,
+  GitBranch,
+  Loader2
 } from 'lucide-react';
+import SkillRoadmapTree from './components/SkillRoadmapTree';
 import {
   SKILLS as DEFAULT_SKILLS,
   VACANCIES as DEFAULT_VACANCIES,
@@ -583,6 +586,43 @@ export default function App() {
     return vacanciesList.filter((v) => v.platform === platformFilter);
   }, [platformFilter, vacanciesList]);
 
+  // Ліниве завантаження вакансій (Lazy Load)
+  const [visibleVacanciesCount, setVisibleVacanciesCount] = useState(12);
+  const vacancySentinelRef = React.useRef(null);
+
+  // Скидання кількості відображених вакансій при зміні фільтра платформи
+  useEffect(() => {
+    setVisibleVacanciesCount(12);
+  }, [platformFilter]);
+
+  const displayedVacancies = useMemo(() => {
+    return filteredVacancies.slice(0, visibleVacanciesCount);
+  }, [filteredVacancies, visibleVacanciesCount]);
+
+  // Автоматичне довантаження при скролі через IntersectionObserver
+  useEffect(() => {
+    if (activeTab !== 'vacancies') return;
+    const el = vacancySentinelRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setVisibleVacanciesCount((prev) => {
+            if (prev < filteredVacancies.length) {
+              return Math.min(prev + 10, filteredVacancies.length);
+            }
+            return prev;
+          });
+        }
+      },
+      { rootMargin: '200px' }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [activeTab, filteredVacancies.length, visibleVacanciesCount]);
+
   const selectedVacancy = useMemo(
     () => vacanciesList.find((v) => v.id === selectedVacancyId) || vacanciesList[0],
     [selectedVacancyId, vacanciesList]
@@ -756,6 +796,18 @@ export default function App() {
               >
                 <Scale className="w-4 h-4" />
                 <span>Порівнялка</span>
+              </button>
+
+              <button
+                onClick={() => setActiveTab('tree')}
+                className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all ${
+                  activeTab === 'tree'
+                    ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
+                    : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
+                }`}
+              >
+                <GitBranch className="w-4 h-4" />
+                <span>Дерево навичок & Роадмапи</span>
               </button>
 
               {currentUser && (
@@ -1631,7 +1683,7 @@ export default function App() {
               <div className="flex items-center justify-between gap-2 flex-wrap">
                 <h3 className="text-base font-bold text-white flex items-center gap-2">
                   <Filter className="w-4 h-4 text-indigo-400" />
-                  Вакансії для Джунів ({filteredVacancies.length})
+                  Вакансії для Джунів ({displayedVacancies.length} з {filteredVacancies.length})
                 </h3>
                 <div className="flex gap-1 flex-wrap">
                   <button
@@ -1661,7 +1713,7 @@ export default function App() {
               </div>
 
               <div className="space-y-3">
-                {filteredVacancies.map((vac) => {
+                {displayedVacancies.map((vac) => {
                   const { percent, matched } = getVacancyMatch(vac);
                   const isActive = vac.id === selectedVacancy.id;
                   return (
@@ -1729,6 +1781,51 @@ export default function App() {
                     </div>
                   );
                 })}
+
+                {/* ЕЛЕМЕНТИ ЛІНИВОГО ЗАВАНТАЖЕННЯ (LAZY LOAD SENTINEL & CONTROLS) */}
+                {visibleVacanciesCount < filteredVacancies.length ? (
+                  <div className="pt-2 space-y-2">
+                    {/* IntersectionObserver Sentinel для автоматичного підвантаження при скролі */}
+                    <div ref={vacancySentinelRef} className="h-6 flex items-center justify-center">
+                      <div className="flex items-center gap-2 text-xs text-slate-500">
+                        <Loader2 className="w-3.5 h-3.5 text-indigo-400 animate-spin" />
+                        <span>Автоматичне завантаження при скролі...</span>
+                      </div>
+                    </div>
+
+                    {/* Панель ручного керування підвантаженням */}
+                    <div className="flex flex-col sm:flex-row items-center justify-between gap-2.5 bg-slate-950/80 border border-slate-800 p-3 rounded-xl">
+                      <div className="text-xs text-slate-400 flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse" />
+                        <span>
+                          Показано <strong className="text-white">{displayedVacancies.length}</strong> з{' '}
+                          <strong className="text-white">{filteredVacancies.length}</strong> вакансій
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <button
+                          onClick={() => setVisibleVacanciesCount((prev) => Math.min(prev + 10, filteredVacancies.length))}
+                          className="px-3 py-1.5 rounded-lg bg-indigo-600/30 hover:bg-indigo-600 text-indigo-300 hover:text-white border border-indigo-500/40 text-xs font-semibold transition flex items-center gap-1"
+                        >
+                          +10 вакансій
+                        </button>
+                        <button
+                          onClick={() => setVisibleVacanciesCount(filteredVacancies.length)}
+                          className="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 text-xs font-medium transition"
+                        >
+                          Показати всі ({filteredVacancies.length})
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  filteredVacancies.length > 0 && (
+                    <div className="pt-3 pb-1 text-center text-xs text-slate-500 flex items-center justify-center gap-1.5 bg-slate-950/40 py-2.5 rounded-xl border border-slate-800/60">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                      <span>Всі {filteredVacancies.length} вакансій завантажено</span>
+                    </div>
+                  )
+                )}
               </div>
             </div>
 
@@ -2413,6 +2510,11 @@ export default function App() {
               })()}
             </div>
           </div>
+        )}
+
+        {/* ================= РЕЖИМ 4: ДЕРЕВО НАВИЧОК ТА РОАДМАПИ (SKILL TREE / ROADMAPS) ================= */}
+        {activeTab === 'tree' && (
+          <SkillRoadmapTree mySkills={mySkills} />
         )}
       </main>
 

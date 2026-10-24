@@ -14,17 +14,9 @@
       "githubUrl": "https://github.com/nubhub-admin",
       "bio": "Головний адміністратор платформи NubHub. Керую базою скілів, вакансій та менторю джунів.",
       "skills": [
-        "postgresql",
-        "git",
-        "javascript",
-        "typescript",
-        "react",
-        "html-css",
-        "python",
-        "fastapi-django",
-        "docker",
+        "mysql",
         "sql",
-        "rest-api"
+        "qa-theory"
       ],
       "createdAt": "2026-09-01T10:00:00Z",
       "skillLevels": {
@@ -40,7 +32,8 @@
         "rest-api": "Бог",
         "docker": "Просунутий",
         "qa-theory": "Базовий",
-        "excel-bi": "Базовий"
+        "excel-bi": "Базовий",
+        "mysql": "Базовий"
       }
     },
     {
