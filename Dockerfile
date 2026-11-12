@@ -25,7 +25,7 @@ FROM node:20-alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production
-ENV PORT=3000
+ENV PORT=3030
 ENV HOST=0.0.0.0
 ENV DB_PATH=/app/data/db.json
 
@@ -46,14 +46,14 @@ RUN mkdir -p /app/data && chown -R node:node /app
 USER node
 
 # Expose HTTP port
-EXPOSE 3000
+EXPOSE 3030
 
 # Declare persistent volume for application data
 VOLUME ["/app/data"]
 
 # Healthcheck
 HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
-  CMD wget --no-verbose --tries=1 --spider http://127.0.0.1:3000/health || exit 1
+  CMD wget --no-verbose --tries=1 --spider http://127.0.0.1:3030/health || exit 1
 
 # Start standalone production server
 CMD ["node", "server/server.js"]
