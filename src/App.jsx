@@ -144,6 +144,7 @@ export default function App() {
   const [selectedVacancyId, setSelectedVacancyId] = useState(DEFAULT_VACANCIES[0].id);
   const [platformFilter, setPlatformFilter] = useState('ALL');
   const [selectedSkillId, setSelectedSkillId] = useState('sql');
+  const [roadmapsList, setRoadmapsList] = useState([]);
 
   // Мульти-порівнялка скілів в межах ОДНІЄЇ категорії (властивості скіла)
   const [compareCategory, setCompareCategory] = useState('Бази даних');
@@ -157,6 +158,7 @@ export default function App() {
       const data = await res.json();
       if (Array.isArray(data.skills)) setSkillsList(data.skills);
       if (Array.isArray(data.vacancies)) setVacanciesList(data.vacancies);
+      if (Array.isArray(data.roadmaps)) setRoadmapsList(data.roadmaps);
     } catch (e) {
       console.error('Failed to load catalog:', e);
     }
@@ -1546,6 +1548,47 @@ export default function App() {
         {/* ================= АДМІН-ПАНЕЛЬ КОРИСТУВАЧІВ ================= */}
         {activeTab === 'admin' && isAdmin && (
           <div className="space-y-6">
+            {/* Реляційна База Даних SQLite Card */}
+            <div className="bg-gradient-to-r from-slate-900 via-slate-900 to-indigo-950/70 border border-cyan-500/30 rounded-2xl p-6 shadow-xl">
+              <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-2xl shadow-inner">
+                    🗄️
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <h2 className="text-lg font-bold text-white">Реляційна база даних: SQLite 3</h2>
+                      <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Active • WAL Mode
+                      </span>
+                    </div>
+                    <p className="text-xs text-slate-400 mt-0.5">
+                      Усі сутності збережено в 4 реляційних таблицях з індексами та транзакційною підтримкою.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <div className="bg-slate-950/70 border border-slate-800 rounded-xl p-3.5 hover:border-cyan-500/30 transition">
+                  <div className="text-[11px] text-slate-400 font-medium">👥 Таблиця <code className="text-cyan-300 font-mono">users</code></div>
+                  <div className="text-xl font-bold text-white mt-1">{allUsers.length} <span className="text-xs font-normal text-slate-400">записів</span></div>
+                </div>
+                <div className="bg-slate-950/70 border border-slate-800 rounded-xl p-3.5 hover:border-cyan-500/30 transition">
+                  <div className="text-[11px] text-slate-400 font-medium">🗺️ Таблиця <code className="text-emerald-300 font-mono">roadmaps</code></div>
+                  <div className="text-xl font-bold text-emerald-400 mt-1">{roadmapsList.length || 3} <span className="text-xs font-normal text-slate-400">треків</span></div>
+                </div>
+                <div className="bg-slate-950/70 border border-slate-800 rounded-xl p-3.5 hover:border-cyan-500/30 transition">
+                  <div className="text-[11px] text-slate-400 font-medium">⚡ Таблиця <code className="text-amber-300 font-mono">skills</code></div>
+                  <div className="text-xl font-bold text-amber-400 mt-1">{skillsList.length} <span className="text-xs font-normal text-slate-400">навичок</span></div>
+                </div>
+                <div className="bg-slate-950/70 border border-slate-800 rounded-xl p-3.5 hover:border-cyan-500/30 transition">
+                  <div className="text-[11px] text-slate-400 font-medium">💼 Таблиця <code className="text-purple-300 font-mono">vacancies</code></div>
+                  <div className="text-xl font-bold text-purple-400 mt-1">{vacanciesList.length} <span className="text-xs font-normal text-slate-400">вакансій</span></div>
+                </div>
+              </div>
+            </div>
             <div className="bg-slate-900/80 border border-amber-500/30 rounded-2xl p-6">
               <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
                 <div>
@@ -2514,7 +2557,7 @@ export default function App() {
 
         {/* ================= РЕЖИМ 4: ДЕРЕВО НАВИЧОК ТА РОАДМАПИ (SKILL TREE / ROADMAPS) ================= */}
         {activeTab === 'tree' && (
-          <SkillRoadmapTree mySkills={mySkills} />
+          <SkillRoadmapTree mySkills={mySkills} tracks={roadmapsList} />
         )}
       </main>
 

@@ -1,6 +1,7 @@
 import {
   loadDb,
   saveDb,
+  getDatabaseStats,
   hashPassword,
   generateToken,
   verifyToken,
@@ -57,12 +58,49 @@ export async function handleApiRequest(req, res) {
     return true;
   }
 
-        // 0. GET /api/catalog — отримати всі скіли та вакансії з БД
+        // 0. GET /api/catalog — отримати всі скіли, вакансії та роадмапи з БД
         if (req.method === 'GET' && pathname === '/api/catalog') {
           return sendJson(res, 200, {
             skills: db.skills,
             vacancies: db.vacancies,
+            roadmaps: db.roadmaps,
           });
+        }
+
+        // 0.01 GET /api/database/stats — статистика таблиць SQLite (users, roadmaps, skills, vacancies)
+        if (req.method === 'GET' && pathname === '/api/database/stats') {
+          return sendJson(res, 200, getDatabaseStats());
+        }
+
+        // 0.02 GET /api/roadmaps — отримати роадмапи з таблиці roadmaps
+        if (req.method === 'GET' && pathname === '/api/roadmaps') {
+          return sendJson(res, 200, { roadmaps: db.roadmaps });
+        }
+
+        // 0.03 POST /api/roadmaps — (Admin) створення / оновлення роадмапу
+        if (req.method === 'POST' && pathname === '/api/roadmaps') {
+          const currentUser = getCurrentUser(req, db);
+          if (!currentUser || currentUser.role !== 'admin') {
+            return sendJson(res, 403, { error: 'Тільки Адміністратор може редагувати роадмапи!' });
+          }
+
+          const body = await parseBody(req);
+          if (!body.id || !body.name) {
+            return sendJson(res, 400, { error: 'ID та назва роадмапу обов’язкові' });
+          }
+
+          const existingIdx = db.roadmaps.findIndex((r) => r.id === body.id);
+          if (existingIdx >= 0) {
+            db.roadmaps[existingIdx] = { ...db.roadmaps[existingIdx], ...body, updatedAt: new Date().toISOString() };
+          } else {
+            db.roadmaps.push({
+              ...body,
+              createdAt: new Date().toISOString(),
+              updatedAt: new Date().toISOString(),
+            });
+          }
+          saveDb(db);
+          return sendJson(res, 200, { roadmaps: db.roadmaps });
         }
 
         // 0.1 POST /api/skills — ТІЛЬКИ ДЛЯ АДМІНІВ: додати новий скіл (відсотки рахуються АВТОМАТИЧНО з вакансій)

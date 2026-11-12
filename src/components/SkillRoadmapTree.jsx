@@ -47,8 +47,24 @@ const RESOURCE_TYPES = {
   practice: { icon: Code2, label: 'Практика', color: 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30' },
 };
 
-export default function SkillRoadmapTree({ mySkills = [] }) {
+export default function SkillRoadmapTree({ mySkills = [], tracks: externalTracks = null }) {
+  const [tracks, setTracks] = useState(externalTracks && externalTracks.length > 0 ? externalTracks : SKILL_TRACKS);
   const [selectedTrackId, setSelectedTrackId] = useState('data-science');
+
+  useEffect(() => {
+    if (externalTracks && externalTracks.length > 0) {
+      setTracks(externalTracks);
+      return;
+    }
+    fetch('/api/roadmaps')
+      .then((res) => res.json())
+      .then((data) => {
+        if (Array.isArray(data.roadmaps) && data.roadmaps.length > 0) {
+          setTracks(data.roadmaps);
+        }
+      })
+      .catch(() => {});
+  }, [externalTracks]);
   const [expandedNodes, setExpandedNodes] = useState({
     'ds-math': true,
     'ds-python': true,

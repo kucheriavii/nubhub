@@ -1,7 +1,7 @@
 # ==========================================
 # Stage 1: Build the Vite React application
 # ==========================================
-FROM node:20-alpine AS builder
+FROM node:22-alpine AS builder
 
 WORKDIR /app
 
@@ -20,14 +20,14 @@ RUN npm run build
 # ==========================================
 # Stage 2: Production runtime image
 # ==========================================
-FROM node:20-alpine AS runner
+FROM node:22-alpine AS runner
 
 WORKDIR /app
 
 ENV NODE_ENV=production
 ENV PORT=3030
 ENV HOST=0.0.0.0
-ENV DB_PATH=/app/data/db.json
+ENV DB_PATH=/app/data/nubhub.db
 
 # Copy package manifests and install only production dependencies
 COPY package*.json ./
