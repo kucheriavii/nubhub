@@ -32,6 +32,8 @@ const MIME_TYPES = {
 };
 
 function serveStatic(req, res) {
+  if (res.headersSent) return;
+
   const parsedUrl = new URL(req.url, 'http://localhost');
   let pathname = decodeURIComponent(parsedUrl.pathname);
   if (pathname === '/') pathname = '/index.html';
@@ -53,6 +55,9 @@ function serveStatic(req, res) {
       'Content-Type': contentType,
       'Cache-Control': isHashedAsset ? 'public, max-age=31536000, immutable' : 'no-cache',
     });
+    if (req.method === 'HEAD') {
+      return res.end();
+    }
     return fs.createReadStream(filePath).pipe(res);
   }
 
@@ -63,6 +68,9 @@ function serveStatic(req, res) {
       'Content-Type': 'text/html; charset=utf-8',
       'Cache-Control': 'no-cache',
     });
+    if (req.method === 'HEAD') {
+      return res.end();
+    }
     return fs.createReadStream(indexPath).pipe(res);
   }
 
@@ -75,9 +83,12 @@ loadDb();
 
 const server = http.createServer(async (req, res) => {
   try {
+    const urlObj = new URL(req.url, 'http://localhost');
+
     // Health check endpoint
-    if (req.url === '/health' || req.url === '/healthz') {
+    if (urlObj.pathname === '/health' || urlObj.pathname === '/healthz') {
       res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
+      if (req.method === 'HEAD') return res.end();
       return res.end(JSON.stringify({ status: 'ok', uptime: process.uptime(), timestamp: new Date().toISOString() }));
     }
 

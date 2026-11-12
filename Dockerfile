@@ -36,8 +36,9 @@ RUN npm ci --only=production || npm install --omit=dev
 # Copy compiled frontend assets from builder
 COPY --from=builder /app/dist ./dist
 
-# Copy backend server and seed database
+# Copy backend server, seed data and database
 COPY server ./server
+COPY src/data ./src/data
 
 # Ensure data directory exists and set permissions
 RUN mkdir -p /app/data && chown -R node:node /app
