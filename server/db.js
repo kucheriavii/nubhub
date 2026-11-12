@@ -6,7 +6,8 @@ import { SKILLS as RAW_SKILLS, VACANCIES as DEFAULT_VACANCIES } from '../src/dat
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const DB_PATH = path.join(__dirname, 'db.json');
+const DEFAULT_DB_PATH = path.join(__dirname, 'db.json');
+const DB_PATH = process.env.DB_PATH || DEFAULT_DB_PATH;
 
 export const DEFAULT_LEVEL_LABELS = ['Базовий', 'Просунутий', 'Бог'];
 
@@ -332,15 +333,28 @@ export function recalculateSkillsDemand(db) {
 }
 
 export function loadDb() {
+  const dir = path.dirname(DB_PATH);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+
   if (!fs.existsSync(DB_PATH)) {
-    const initialData = {
-      users: INITIAL_USERS,
-      skills: DEFAULT_SKILLS,
-      vacancies: DEFAULT_VACANCIES,
-    };
-    recalculateSkillsDemand(initialData);
-    fs.writeFileSync(DB_PATH, JSON.stringify(initialData, null, 2), 'utf-8');
-    return initialData;
+    if (DB_PATH !== DEFAULT_DB_PATH && fs.existsSync(DEFAULT_DB_PATH)) {
+      try {
+        fs.copyFileSync(DEFAULT_DB_PATH, DB_PATH);
+      } catch (err) {
+        console.error('Failed to copy initial DB to DB_PATH:', err);
+      }
+    } else {
+      const initialData = {
+        users: INITIAL_USERS,
+        skills: DEFAULT_SKILLS,
+        vacancies: DEFAULT_VACANCIES,
+      };
+      recalculateSkillsDemand(initialData);
+      fs.writeFileSync(DB_PATH, JSON.stringify(initialData, null, 2), 'utf-8');
+      return initialData;
+    }
   }
   try {
     const raw = fs.readFileSync(DB_PATH, 'utf-8');
@@ -418,6 +432,10 @@ export function loadDb() {
 
 export function saveDb(data) {
   recalculateSkillsDemand(data);
+  const dir = path.dirname(DB_PATH);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
   fs.writeFileSync(DB_PATH, JSON.stringify(data, null, 2), 'utf-8');
 }
 

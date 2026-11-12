@@ -42,20 +42,20 @@ function getCurrentUser(req, db) {
   return db.users.find((u) => u.id === payload.id) || null;
 }
 
-export function apiMiddleware() {
-  return {
-    name: 'nubhub-api-middleware',
-    configureServer(server) {
-      loadDb();
+export async function handleApiRequest(req, res) {
+  if (!req.url || !req.url.startsWith('/api/')) {
+    return false;
+  }
 
-      server.middlewares.use(async (req, res, next) => {
-        if (!req.url || !req.url.startsWith('/api/')) {
-          return next();
-        }
+  const urlObj = new URL(req.url, 'http://localhost');
+  const pathname = urlObj.pathname;
+  const db = loadDb();
 
-        const urlObj = new URL(req.url, 'http://localhost');
-        const pathname = urlObj.pathname;
-        const db = loadDb();
+  // Health check
+  if (req.method === 'GET' && pathname === '/api/health') {
+    sendJson(res, 200, { status: 'ok', uptime: process.uptime(), timestamp: new Date().toISOString() });
+    return true;
+  }
 
         // 0. GET /api/catalog — отримати всі скіли та вакансії з БД
         if (req.method === 'GET' && pathname === '/api/catalog') {
@@ -435,7 +435,26 @@ export function apiMiddleware() {
           }
         }
 
-        return sendJson(res, 404, { error: 'API route not found' });
+  sendJson(res, 404, { error: 'API route not found' });
+  return true;
+}
+
+export function apiMiddleware() {
+  return {
+    name: 'nubhub-api-middleware',
+    configureServer(server) {
+      loadDb();
+
+      server.middlewares.use(async (req, res, next) => {
+        try {
+          const handled = await handleApiRequest(req, res);
+          if (!handled) {
+            next();
+          }
+        } catch (err) {
+          console.error('API middleware error:', err);
+          sendJson(res, 500, { error: 'Internal Server Error' });
+        }
       });
     },
   };
